@@ -24,7 +24,7 @@ export class App extends Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(_, prevState) {
     if (
       prevState.contacts.length !== 0 &&
       prevState.contacts.length !== this.state.contacts.length
